@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="WgL-m6-8iA" customClass="HomeDetailView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="230"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="opS-iy-xGJ">
+                    <rect key="frame" x="10" y="10" width="394" height="220"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电柜编号：2547" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mb9-Ac-Zf1">
+                            <rect key="frame" x="10" y="5" width="105" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="14j-Ar-MvK"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.27457949520000002" green="0.27059155699999998" blue="0.2705048323" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="站点类型：换电站" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5at-nJ-62v">
+                            <rect key="frame" x="10" y="35" width="115" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="qRl-39-3CZ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.27457949520000002" green="0.27059155699999998" blue="0.2705048323" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="站点名称：天津双街产业园" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cip-Wa-uwh">
+                            <rect key="frame" x="10" y="65" width="172" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="po6-mP-DLI"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.27457949520000002" green="0.27059155699999998" blue="0.2705048323" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="站点地址：天津双街产业园" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Fo-SZ-5Qk">
+                            <rect key="frame" x="10" y="95" width="172" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="yiM-dq-K7B"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.27457949520000002" green="0.27059155699999998" blue="0.2705048323" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="营业时间：24小时" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="83s-Ik-0x0">
+                            <rect key="frame" x="10" y="125" width="117" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="1qP-0O-b1R"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.27457949520000002" green="0.27059155699999998" blue="0.2705048323" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="充电柜内电池数：1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Rd-5l-vSh">
+                            <rect key="frame" x="10" y="155" width="121" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="MyA-dq-doq"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.27457949520000002" green="0.27059155699999998" blue="0.2705048323" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="联系人电话：11111111111" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l6a-Qc-Rxn">
+                            <rect key="frame" x="10" y="185" width="156" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="VcE-Lh-iFI"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.27457949520000002" green="0.27059155699999998" blue="0.2705048323" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="Cip-Wa-uwh" firstAttribute="leading" secondItem="opS-iy-xGJ" secondAttribute="leading" constant="10" id="EDI-cU-kvX"/>
+                        <constraint firstItem="Mb9-Ac-Zf1" firstAttribute="top" secondItem="opS-iy-xGJ" secondAttribute="top" constant="5" id="FVm-aB-NfB"/>
+                        <constraint firstItem="1Fo-SZ-5Qk" firstAttribute="top" secondItem="Cip-Wa-uwh" secondAttribute="bottom" id="LlL-hn-ybG"/>
+                        <constraint firstItem="9Rd-5l-vSh" firstAttribute="top" secondItem="83s-Ik-0x0" secondAttribute="bottom" id="VVr-s5-YBJ"/>
+                        <constraint firstItem="Mb9-Ac-Zf1" firstAttribute="leading" secondItem="opS-iy-xGJ" secondAttribute="leading" constant="10" id="Vph-5N-QCT"/>
+                        <constraint firstItem="9Rd-5l-vSh" firstAttribute="leading" secondItem="opS-iy-xGJ" secondAttribute="leading" constant="10" id="XPc-IX-ANZ"/>
+                        <constraint firstItem="83s-Ik-0x0" firstAttribute="leading" secondItem="opS-iy-xGJ" secondAttribute="leading" constant="10" id="bWn-Mb-wxz"/>
+                        <constraint firstItem="5at-nJ-62v" firstAttribute="top" secondItem="Mb9-Ac-Zf1" secondAttribute="bottom" id="dJQ-nT-T1p"/>
+                        <constraint firstItem="83s-Ik-0x0" firstAttribute="top" secondItem="1Fo-SZ-5Qk" secondAttribute="bottom" id="g3b-vQ-pA8"/>
+                        <constraint firstItem="l6a-Qc-Rxn" firstAttribute="top" secondItem="9Rd-5l-vSh" secondAttribute="bottom" id="gek-hi-vj0"/>
+                        <constraint firstItem="5at-nJ-62v" firstAttribute="leading" secondItem="opS-iy-xGJ" secondAttribute="leading" constant="10" id="iGH-I1-TKM"/>
+                        <constraint firstItem="Cip-Wa-uwh" firstAttribute="top" secondItem="5at-nJ-62v" secondAttribute="bottom" id="ldW-uk-hSD"/>
+                        <constraint firstItem="l6a-Qc-Rxn" firstAttribute="leading" secondItem="opS-iy-xGJ" secondAttribute="leading" constant="10" id="mSb-mT-v63"/>
+                        <constraint firstItem="1Fo-SZ-5Qk" firstAttribute="leading" secondItem="opS-iy-xGJ" secondAttribute="leading" constant="10" id="vCP-9a-SfC"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="3"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Z4b-M3-A0a" firstAttribute="trailing" secondItem="opS-iy-xGJ" secondAttribute="trailing" constant="10" id="ZfH-jM-QKI"/>
+                <constraint firstItem="Z4b-M3-A0a" firstAttribute="bottom" secondItem="opS-iy-xGJ" secondAttribute="bottom" id="e5V-uo-DCB"/>
+                <constraint firstItem="opS-iy-xGJ" firstAttribute="top" secondItem="WgL-m6-8iA" secondAttribute="top" constant="10" id="lg1-6v-74F"/>
+                <constraint firstItem="opS-iy-xGJ" firstAttribute="leading" secondItem="Z4b-M3-A0a" secondAttribute="leading" constant="10" id="mWv-A7-kab"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Z4b-M3-A0a"/>
+            <connections>
+                <outlet property="dcNumLab" destination="9Rd-5l-vSh" id="MS0-QT-y6e"/>
+                <outlet property="dgbhLab" destination="Mb9-Ac-Zf1" id="doi-yM-R7I"/>
+                <outlet property="phoneLab" destination="l6a-Qc-Rxn" id="l0C-Wp-uk3"/>
+                <outlet property="yyTimeLab" destination="83s-Ik-0x0" id="7Zm-5L-9LB"/>
+                <outlet property="zdAddressLab" destination="1Fo-SZ-5Qk" id="Xac-bw-QKG"/>
+                <outlet property="zdNameLab" destination="Cip-Wa-uwh" id="ats-KA-OU3"/>
+                <outlet property="zdlxLab" destination="5at-nJ-62v" id="6Ra-UL-tCU"/>
+            </connections>
+            <point key="canvasLocation" x="65" y="28"/>
+        </view>
+    </objects>
+</document>

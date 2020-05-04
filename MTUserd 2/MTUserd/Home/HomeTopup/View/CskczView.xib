@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="6C7-et-lFJ" customClass="CskczView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择次数卡类型" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ib-FD-0se">
+                    <rect key="frame" x="10" y="54" width="139" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.44688993690000001" green="0.45095264909999999" blue="0.45505040879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tuh-Nv-9bI">
+                    <rect key="frame" x="10" y="85" width="394" height="300"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="LKJ-FD-9lP"/>
+                    </constraints>
+                </view>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSj-7n-xcy">
+                    <rect key="frame" x="132" y="435" width="150" height="40"/>
+                    <color key="backgroundColor" red="0.12777772549999999" green="0.52631616589999997" blue="0.85020643470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="n2m-qA-q8E"/>
+                        <constraint firstAttribute="width" constant="150" id="rDz-gy-6oU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="购买"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="20"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="buyBtnClick:" destination="6C7-et-lFJ" eventType="touchUpInside" id="t9u-IH-EgH"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="tuh-Nv-9bI" firstAttribute="top" secondItem="0Ib-FD-0se" secondAttribute="bottom" constant="10" id="6uZ-yp-DLA"/>
+                <constraint firstItem="tuh-Nv-9bI" firstAttribute="leading" secondItem="6C7-et-lFJ" secondAttribute="leading" constant="10" id="BGL-J3-9ms"/>
+                <constraint firstItem="0Ib-FD-0se" firstAttribute="top" secondItem="KKp-gu-18m" secondAttribute="top" constant="10" id="FhP-Bz-Ukc"/>
+                <constraint firstItem="LSj-7n-xcy" firstAttribute="centerX" secondItem="KKp-gu-18m" secondAttribute="centerX" id="Rts-JR-axk"/>
+                <constraint firstItem="0Ib-FD-0se" firstAttribute="leading" secondItem="KKp-gu-18m" secondAttribute="leading" constant="10" id="Xx9-Q5-igr"/>
+                <constraint firstItem="KKp-gu-18m" firstAttribute="trailing" secondItem="tuh-Nv-9bI" secondAttribute="trailing" constant="10" id="c1s-ak-Egy"/>
+                <constraint firstItem="LSj-7n-xcy" firstAttribute="top" secondItem="tuh-Nv-9bI" secondAttribute="bottom" constant="50" id="w9H-wk-ibj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="KKp-gu-18m"/>
+            <connections>
+                <outlet property="bgView" destination="tuh-Nv-9bI" id="2G2-ac-HRQ"/>
+                <outlet property="bgViewHeight" destination="LKJ-FD-9lP" id="zEj-p5-AZZ"/>
+                <outlet property="buyBtn" destination="LSj-7n-xcy" id="UXn-0M-Qr6"/>
+            </connections>
+            <point key="canvasLocation" x="120" y="85"/>
+        </view>
+    </objects>
+</document>

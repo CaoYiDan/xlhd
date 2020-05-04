@@ -1,0 +1,74 @@
+//
+//  PrefixHeader.pch
+//  MTShopd
+//
+//  Created by 伯爵 on 2019/11/7.
+//  Copyright © 2019 MTShopd. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import "MBProgressHUD.h"
+#import <MJRefresh/MJRefresh.h>
+#import <IQKeyboardManager.h>
+#define ScreenWidth ([UIScreen mainScreen].bounds.size.width)
+#define ScreenHeight ([UIScreen mainScreen].bounds.size.height)
+
+#define MBPShowToView(view)  [MBProgressHUD showHUDAddedTo:view animated:YES];
+
+#define MBPHiddenFormView(view)  [MBProgressHUD hideHUDForView:view animated:YES];
+
+//颜色rgb
+#define RGB(R,G,B)        [UIColor colorWithRed:R/255.0f green:G/255.0f blue:B/255.0f alpha:1.0f]
+#define mainColor        [UIColor colorWithRed:248/255.0f green:134/255.0f blue:38/255.0f alpha:1.0f]
+
+/** 颜色值RGB */
+#define m_Color_RGB(r,g,b) RGB(r,g,b)
+
+
+#define KmainColor_ls m_Color_RGB(250, 134, 9)
+
+/** 苹方常规 */
+#define m_FontPF_Regular_WithSize(fontSize) [UIFont fontWithName:@"PingfangSC-Regular" size:(fontSize)]
+
+/** 苹方中黑 */
+#define m_FontPF_Medium_WithSize(fontSize) [UIFont fontWithName:@"PingfangSC-Medium" size:(fontSize)]
+
+/** 苹方中粗 */
+#define m_FontPF_Semibold_WithSize(fontSize) [UIFont fontWithName:@"PingFangSC-Semibold" size:(fontSize)]
+
+#define Token [[NSUserDefaults standardUserDefaults] objectForKey:@"user_token"]
+
+#define base_url @"https://xlhdmerchant.zhixingonline.com/"
+
+#define Toast(msg) [[[Singleton shardeManger]getCurrentVC] showHint:msg];
+//第三方
+//RAC
+#import <ReactiveObjC/ReactiveObjC.h>
+#import "LS_Factory.h"
+#import "UITableViewCell+Extension.h"
+#import "DataRequest.h"
+#import "UIView+Convenience.h"
+#import "UIView+NIB.h"
+#import "UIView+Addtion.h"
+#import "JKLimitInput.h"
+#import "UITextView+JKExtension.h"
+#import "UIViewController+HUD.h"
+#import <YYModel/YYModel.h>
+#import "SearchView.h"
+#import "PYSearch.h"
+#import "WXApi.h"
+#import "UIImageView+WebCache.h"
+#import "UIButton+WebCache.h"
+#import <Masonry.h>
+#import "Singleton.h"
+
+
+//控制器
+#import "AppDelegate.h"
+#import "BaseNavigationController.h"
+#import "MCTabBarController.h"
+#import "XhomeViewController.h"
+
+
+#endif /* PrefixHeader_pch */

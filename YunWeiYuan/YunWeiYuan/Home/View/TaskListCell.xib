@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="TaskListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XTX-Kx-LLS">
+                        <rect key="frame" x="10" y="10" width="300" height="140"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="工单号：007" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84W-84-HaH">
+                                <rect key="frame" x="10" y="10" width="82.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="tlq-Ia-Jmz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.27457949520000002" green="0.27059155699999998" blue="0.2705048323" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设备ID：008" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZu-G6-iG6">
+                                <rect key="frame" x="10" y="40" width="83" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2mr-rM-OwC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.27457949520000002" green="0.27059155699999998" blue="0.2705048323" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="站点地址：天津双街产业园" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CBU-pA-ARg">
+                                <rect key="frame" x="10" y="70" width="172" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="vr8-X1-uhx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.27457949520000002" green="0.27059155699999998" blue="0.2705048323" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etL-IZ-Ciq">
+                                <rect key="frame" x="210" y="10" width="80" height="30"/>
+                                <color key="backgroundColor" red="0.28637668490000001" green="0.51302373410000002" blue="0.3308899105" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="MgO-A8-3nQ"/>
+                                    <constraint firstAttribute="width" constant="80" id="aMk-oq-2fu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="故障处理"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="gzclBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="bDV-Pe-OwN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="问题描述：内容内容内容内容" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KEC-xt-BIp">
+                                <rect key="frame" x="10" y="100" width="186" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="S6F-cl-MjI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.27457949520000002" green="0.27059155699999998" blue="0.2705048323" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="KEC-xt-BIp" firstAttribute="leading" secondItem="XTX-Kx-LLS" secondAttribute="leading" constant="10" id="23e-2X-tdy"/>
+                            <constraint firstItem="CBU-pA-ARg" firstAttribute="top" secondItem="RZu-G6-iG6" secondAttribute="bottom" id="7jG-EQ-mcX"/>
+                            <constraint firstItem="RZu-G6-iG6" firstAttribute="top" secondItem="84W-84-HaH" secondAttribute="bottom" id="Cck-dR-kzU"/>
+                            <constraint firstAttribute="trailing" secondItem="etL-IZ-Ciq" secondAttribute="trailing" constant="10" id="PDB-gB-9re"/>
+                            <constraint firstItem="RZu-G6-iG6" firstAttribute="leading" secondItem="XTX-Kx-LLS" secondAttribute="leading" constant="10" id="Rxz-3e-4vd"/>
+                            <constraint firstItem="CBU-pA-ARg" firstAttribute="leading" secondItem="XTX-Kx-LLS" secondAttribute="leading" constant="10" id="c9N-Lw-Oba"/>
+                            <constraint firstItem="84W-84-HaH" firstAttribute="leading" secondItem="XTX-Kx-LLS" secondAttribute="leading" constant="10" id="dBh-hd-BdX"/>
+                            <constraint firstItem="KEC-xt-BIp" firstAttribute="top" secondItem="CBU-pA-ARg" secondAttribute="bottom" id="lZG-vd-O9e"/>
+                            <constraint firstItem="84W-84-HaH" firstAttribute="top" secondItem="XTX-Kx-LLS" secondAttribute="top" constant="10" id="pHL-yF-d6q"/>
+                            <constraint firstItem="etL-IZ-Ciq" firstAttribute="centerY" secondItem="84W-84-HaH" secondAttribute="centerY" id="srD-vS-QpX"/>
+                            <constraint firstItem="84W-84-HaH" firstAttribute="leading" secondItem="XTX-Kx-LLS" secondAttribute="leading" constant="10" id="zMQ-xX-NAs"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="3"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="XTX-Kx-LLS" secondAttribute="trailing" constant="10" id="BnD-4F-K2X"/>
+                    <constraint firstItem="XTX-Kx-LLS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="RN4-j0-9VP"/>
+                    <constraint firstItem="XTX-Kx-LLS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ik9-Yp-1ja"/>
+                    <constraint firstAttribute="bottom" secondItem="XTX-Kx-LLS" secondAttribute="bottom" id="oFh-1f-SjE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="addressLab" destination="CBU-pA-ARg" id="sZ3-OR-mPd"/>
+                <outlet property="gdNumLab" destination="84W-84-HaH" id="tca-BN-pHg"/>
+                <outlet property="gzclBtn" destination="etL-IZ-Ciq" id="8hd-Ry-yx3"/>
+                <outlet property="msLab" destination="KEC-xt-BIp" id="PSC-Nv-Rju"/>
+                <outlet property="sbIdLab" destination="RZu-G6-iG6" id="7Od-vL-GMh"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="99.776785714285708"/>
+        </tableViewCell>
+    </objects>
+</document>

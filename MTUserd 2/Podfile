@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'MTUserd' do
+  pod 'AFNetworking'
+    pod 'SDWebImage'
+    pod 'MJRefresh'
+#    pod 'MBProgressHUD'
+    pod 'SDCycleScrollView'
+    pod 'Masonry'
+    pod 'YYModel'
+    pod 'AMapLocation'
+    pod 'AMapSearch'
+    pod 'AMap3DMap'
+    pod 'YYModel'
+    pod 'AliPay'
+#    pod 'AlipaySDK-iOS'
+    pod 'WechatOpenSDK'
+    pod 'IQKeyboardManager'
+
+end

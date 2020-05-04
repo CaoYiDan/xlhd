@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyBreakdownViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="buttons" destination="IJE-WH-y3r" id="W3S-68-rUw"/>
+                <outletCollection property="buttons" destination="Spi-LF-ZvU" id="Ij3-Yo-kgn"/>
+                <outletCollection property="buttons" destination="ARc-QI-2Z5" id="vX6-ut-YYs"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6IO-qr-THb">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJE-WH-y3r">
+                            <rect key="frame" x="0.0" y="0.0" width="138" height="44"/>
+                            <color key="backgroundColor" red="0.12777772549999999" green="0.52631616589999997" blue="0.85020643470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="全部">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="chooseBtnClick:" destination="-1" eventType="touchUpInside" id="0hA-TJ-Jh5"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Spi-LF-ZvU">
+                            <rect key="frame" x="138" y="0.0" width="138" height="44"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="处理中">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="chooseBtnClick:" destination="-1" eventType="touchUpInside" id="s6D-mU-Hdo"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ARc-QI-2Z5">
+                            <rect key="frame" x="276" y="0.0" width="138" height="44"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="已处理">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="chooseBtnClick:" destination="-1" eventType="touchUpInside" id="jA7-3e-Loy"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96839326619999999" green="0.97247892619999998" blue="0.98064213990000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="IJE-WH-y3r" secondAttribute="bottom" id="4BM-8r-dk6"/>
+                        <constraint firstItem="Spi-LF-ZvU" firstAttribute="top" secondItem="6IO-qr-THb" secondAttribute="top" id="4t7-ZH-XNC"/>
+                        <constraint firstAttribute="bottom" secondItem="ARc-QI-2Z5" secondAttribute="bottom" id="6co-d1-OmN"/>
+                        <constraint firstItem="ARc-QI-2Z5" firstAttribute="leading" secondItem="Spi-LF-ZvU" secondAttribute="trailing" id="7ko-bK-hXT"/>
+                        <constraint firstItem="ARc-QI-2Z5" firstAttribute="centerY" secondItem="6IO-qr-THb" secondAttribute="centerY" id="Kep-n5-5NR"/>
+                        <constraint firstAttribute="bottom" secondItem="Spi-LF-ZvU" secondAttribute="bottom" id="Ntb-Kx-3EF"/>
+                        <constraint firstAttribute="height" constant="44" id="RRj-Xw-Ymz"/>
+                        <constraint firstItem="Spi-LF-ZvU" firstAttribute="centerY" secondItem="6IO-qr-THb" secondAttribute="centerY" id="T3q-rY-mAn"/>
+                        <constraint firstItem="ARc-QI-2Z5" firstAttribute="top" secondItem="6IO-qr-THb" secondAttribute="top" id="YFq-Vk-dQo"/>
+                        <constraint firstItem="IJE-WH-y3r" firstAttribute="leading" secondItem="6IO-qr-THb" secondAttribute="leading" id="ZSR-Jm-yK7"/>
+                        <constraint firstItem="IJE-WH-y3r" firstAttribute="centerY" secondItem="6IO-qr-THb" secondAttribute="centerY" id="dXD-3E-Ewm"/>
+                        <constraint firstItem="Spi-LF-ZvU" firstAttribute="width" secondItem="IJE-WH-y3r" secondAttribute="width" id="fDc-4D-HtJ"/>
+                        <constraint firstItem="IJE-WH-y3r" firstAttribute="top" secondItem="6IO-qr-THb" secondAttribute="top" id="gAw-X5-UIW"/>
+                        <constraint firstAttribute="trailing" secondItem="ARc-QI-2Z5" secondAttribute="trailing" id="p1c-eI-KIV"/>
+                        <constraint firstItem="Spi-LF-ZvU" firstAttribute="leading" secondItem="IJE-WH-y3r" secondAttribute="trailing" id="tbo-CF-D5j"/>
+                        <constraint firstItem="IJE-WH-y3r" firstAttribute="width" secondItem="6IO-qr-THb" secondAttribute="width" multiplier="1:3" id="xeD-BX-Y1Z"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6IO-qr-THb" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="3qn-xG-1Ap"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="6IO-qr-THb" secondAttribute="trailing" id="6L5-8x-ydG"/>
+                <constraint firstItem="6IO-qr-THb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="XwI-m8-oJD"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="139" y="120"/>
+        </view>
+    </objects>
+</document>

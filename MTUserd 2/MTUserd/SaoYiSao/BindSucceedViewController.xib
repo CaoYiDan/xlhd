@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BindSucceedViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="xianxiajnBtn" destination="ZRa-5D-eDt" id="BOv-50-6ie"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bindsucceed" translatesAutoresizingMaskIntoConstraints="NO" id="4cr-Ou-Sfy">
+                    <rect key="frame" x="163.5" y="144" width="87" height="87"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="恭喜您，绑定商家完成!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zqA-qO-qK2">
+                    <rect key="frame" x="128.5" y="261" width="157.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.44688993690000001" green="0.45095264909999999" blue="0.45505040879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="缴纳押金，立即用电" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTo-RF-1Jf">
+                    <rect key="frame" x="138" y="289" width="138" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.27457949520000002" green="0.27059155699999998" blue="0.2705048323" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZRa-5D-eDt">
+                    <rect key="frame" x="147" y="347" width="120" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="6Y6-Li-AbE"/>
+                        <constraint firstAttribute="height" constant="34" id="M8H-7p-DIU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="线下缴纳">
+                        <color key="titleColor" red="0.44688993690000001" green="0.45095264909999999" blue="0.45505040879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="17"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SgA-wV-4QZ">
+                    <rect key="frame" x="147" y="391" width="120" height="34"/>
+                    <color key="backgroundColor" red="0.0" green="0.54164546728134155" blue="0.9943581223487854" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="1e1-pa-q7L"/>
+                        <constraint firstAttribute="width" constant="120" id="pID-Tk-1aq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="线上缴纳">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="17"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="554-Fx-03C">
+                    <rect key="frame" x="147" y="435" width="120" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="3PW-gs-Q4X"/>
+                        <constraint firstAttribute="height" constant="34" id="lpd-Vy-3Pz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="跳过">
+                        <color key="titleColor" red="0.44688993690000001" green="0.45095264909999999" blue="0.45505040879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="17"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="554-Fx-03C" firstAttribute="top" secondItem="SgA-wV-4QZ" secondAttribute="bottom" constant="10" id="5On-ie-wwT"/>
+                <constraint firstItem="ZRa-5D-eDt" firstAttribute="top" secondItem="vTo-RF-1Jf" secondAttribute="bottom" constant="40" id="9Lq-2q-y0X"/>
+                <constraint firstItem="zqA-qO-qK2" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="Azr-g2-2zY"/>
+                <constraint firstItem="ZRa-5D-eDt" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="GVx-Jg-bhE"/>
+                <constraint firstItem="vTo-RF-1Jf" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="MfM-yi-1uP"/>
+                <constraint firstItem="vTo-RF-1Jf" firstAttribute="top" secondItem="zqA-qO-qK2" secondAttribute="bottom" constant="10" id="MhF-wk-qJz"/>
+                <constraint firstItem="554-Fx-03C" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="eYd-4R-HHO"/>
+                <constraint firstItem="zqA-qO-qK2" firstAttribute="top" secondItem="4cr-Ou-Sfy" secondAttribute="bottom" constant="30" id="era-FK-EeG"/>
+                <constraint firstItem="SgA-wV-4QZ" firstAttribute="top" secondItem="ZRa-5D-eDt" secondAttribute="bottom" constant="10" id="gds-1y-9y9"/>
+                <constraint firstItem="4cr-Ou-Sfy" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="100" id="liQ-uy-NoE"/>
+                <constraint firstItem="4cr-Ou-Sfy" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="nSI-7A-7hh"/>
+                <constraint firstItem="SgA-wV-4QZ" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="tTT-qG-dLw"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="139" y="102"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bindsucceed" width="87" height="87"/>
+    </resources>
+</document>

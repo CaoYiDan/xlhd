@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BindShopViewController">
+            <connections>
+                <outlet property="skip" destination="6oi-hn-WBY" id="eCH-9r-SoZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="组 17" translatesAutoresizingMaskIntoConstraints="NO" id="mbe-UJ-MwQ">
+                    <rect key="frame" x="143" y="144" width="128" height="128"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="先绑定商家才可以使用哦~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNZ-In-wkf">
+                    <rect key="frame" x="118" y="312" width="178" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.27457949520000002" green="0.27059155699999998" blue="0.2705048323" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SjI-2P-f8o">
+                    <rect key="frame" x="172" y="370" width="70" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.54164546729999996" blue="0.99435812229999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="8oQ-os-aAZ"/>
+                        <constraint firstAttribute="height" constant="30" id="Qng-lX-kqu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="去绑定"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="goBindBtnClick:" destination="-1" eventType="touchUpInside" id="pkb-i7-jV4"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6oi-hn-WBY">
+                    <rect key="frame" x="182" y="412" width="50" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="PQo-sa-EiC"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="WlM-nF-NaF"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="31" id="cT9-Q3-GGg"/>
+                        <constraint firstAttribute="height" constant="30" id="nrU-Da-W40"/>
+                    </constraints>
+                    <state key="normal" title="跳过">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="skipClick:" destination="-1" eventType="touchUpInside" id="5fc-Jp-ZmA"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="iNZ-In-wkf" firstAttribute="top" secondItem="mbe-UJ-MwQ" secondAttribute="bottom" constant="40" id="0XI-N0-kxA"/>
+                <constraint firstItem="6oi-hn-WBY" firstAttribute="top" secondItem="SjI-2P-f8o" secondAttribute="bottom" constant="39" id="GEb-B4-QfS"/>
+                <constraint firstItem="SjI-2P-f8o" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="Ge5-cs-QZ7"/>
+                <constraint firstItem="mbe-UJ-MwQ" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="S4q-qy-2qT"/>
+                <constraint firstItem="iNZ-In-wkf" firstAttribute="centerX" secondItem="mbe-UJ-MwQ" secondAttribute="centerX" id="agY-Of-Sx3"/>
+                <constraint firstItem="6oi-hn-WBY" firstAttribute="top" secondItem="SjI-2P-f8o" secondAttribute="bottom" constant="12" id="gQB-HS-6wQ"/>
+                <constraint firstItem="SjI-2P-f8o" firstAttribute="top" secondItem="iNZ-In-wkf" secondAttribute="bottom" constant="40" id="kU2-cS-fYO"/>
+                <constraint firstItem="6oi-hn-WBY" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="nH1-WU-efh"/>
+                <constraint firstItem="6oi-hn-WBY" firstAttribute="top" secondItem="SjI-2P-f8o" secondAttribute="bottom" constant="12" id="qX8-aM-2Ge"/>
+                <constraint firstItem="mbe-UJ-MwQ" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="100" id="tRY-6O-uzT"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="139" y="101"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="组 17" width="128" height="128"/>
+    </resources>
+</document>

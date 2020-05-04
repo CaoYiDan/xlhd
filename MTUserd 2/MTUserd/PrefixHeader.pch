@@ -1,0 +1,93 @@
+//
+//  PrefixHeader.pch
+//  MTUserd
+//
+//  Created by 伯爵 on 2019/11/11.
+//  Copyright © 2019 MTShopd. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+
+#define PrefixHeader_pch
+#import <MJRefresh/MJRefresh.h>
+#import "MBProgressHUD.h"
+#import <IQKeyboardManager.h>
+#define WeakSelf __weak typeof(self) weakSelf = self;
+
+#define  Toast(msg)  UIView *view = [[UIApplication sharedApplication].delegate window];\
+   MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];\
+   hud.userInteractionEnabled = NO;\
+   hud.mode = MBProgressHUDModeText;\
+   hud.labelText = msg;\
+   hud.margin = 10.f;\
+   hud.yOffset = 180;\
+   hud.removeFromSuperViewOnHide = YES;\
+   [hud hide:YES afterDelay:2];\
+
+#define ScreenWidth ([UIScreen mainScreen].bounds.size.width)
+#define ScreenHeight ([UIScreen mainScreen].bounds.size.height)
+#define MBPShowToView(view)  [MBProgressHUD showHUDAddedTo:view animated:YES];
+#define MBPHiddenFormView(view)  [MBProgressHUD hideHUDForView:view animated:YES];
+   
+#define Token [[NSUserDefaults standardUserDefaults] objectForKey:@"user_token"]
+
+#define user_latitude [[NSUserDefaults standardUserDefaults] objectForKey:@"latitude"]
+#define user_longitude [[NSUserDefaults standardUserDefaults] objectForKey:@"longitude"]
+//省
+#define user_province [[NSUserDefaults standardUserDefaults] objectForKey:@"province"]
+//市
+#define user_locationCity [[NSUserDefaults standardUserDefaults] objectForKey:@"locationCity"]
+//区
+#define user_subLocality [[NSUserDefaults standardUserDefaults] objectForKey:@"subLocality"]
+//街道
+#define user_street [[NSUserDefaults standardUserDefaults] objectForKey:@"street"]
+
+#define MBPShowToView(view)  [MBProgressHUD showHUDAddedTo:view animated:YES];
+
+#define MBPHiddenFormView(view)  [MBProgressHUD hideHUDForView:view animated:YES];
+
+//接口
+//#define base_url @"http://mtcc001.zhixingonline.com/app/"
+//#define base_url @"http://lhn070304.oicp.net:49521/index.php/"
+
+#define base_url @"https://xlhduser.zhixingonline.com/"
+
+//颜色rgb
+#define RGB(R,G,B)        [UIColor colorWithRed:R/255.0f green:G/255.0f blue:B/255.0f alpha:1.0f]
+#define mainColor        [UIColor colorWithRed:33/255.0f green:134/255.0f blue:217/255.0f alpha:1.0f]
+
+//第三方
+#import "NSObject+Common.h"
+#import "MBProgressHUD.h"
+#import "DataRequest.h"
+#import "UIView+Convenience.h"
+#import "UIView+NIB.h"
+#import "UIView+Addtion.h"
+#import "JKLimitInput.h"
+#import "UITextView+JKExtension.h"
+#import "UIViewController+HUD.h"
+#import <YYModel/YYModel.h>
+#import "BankPickerTool.h"
+#import <Masonry.h>
+#import <MAMapKit/MAMapKit.h>
+#import <AMapFoundationKit/AMapFoundationKit.h>
+#import <AMapSearchKit/AMapSearchKit.h>
+#import <AMapLocationKit/AMapLocationManager.h>
+//#import <AMapNaviKit/AMapNaviKit.h>
+
+#import <AlipaySDK/AlipaySDK.h>
+//#import "APOpenAPI.h"
+
+#import "Singleton.h"
+
+//控制器
+#import "AppDelegate.h"
+#import "HomeViewController.h"
+#import "BaseNavigationController.h"
+#import "LoginViewController.h"
+#import "TopupDetailViewController.h"
+
+//model
+#import "YkczModel.h"
+
+#endif /* PrefixHeader_pch */

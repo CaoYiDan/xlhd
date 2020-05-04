@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="5Nl-kz-DyW" customClass="BuyDcView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="购买电池" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qSm-Bw-fo8">
+                    <rect key="frame" x="10" y="54" width="69.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.44688993690000001" green="0.45095264909999999" blue="0.45505040879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QRU-BG-OoF">
+                    <rect key="frame" x="10" y="85" width="394" height="300"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="bnG-sZ-4X2"/>
+                    </constraints>
+                </view>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vrK-QD-4bL">
+                    <rect key="frame" x="132" y="435" width="150" height="40"/>
+                    <color key="backgroundColor" red="0.12777772549999999" green="0.52631616589999997" blue="0.85020643470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="oOh-ST-406"/>
+                        <constraint firstAttribute="width" constant="150" id="x8C-jD-JcM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="购买"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="20"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="buyBtnClick:" destination="5Nl-kz-DyW" eventType="touchUpInside" id="3yy-qr-sFu"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="QRU-BG-OoF" firstAttribute="leading" secondItem="5Nl-kz-DyW" secondAttribute="leading" constant="10" id="35L-Z2-Vzz"/>
+                <constraint firstItem="bN9-N4-BZ9" firstAttribute="trailing" secondItem="QRU-BG-OoF" secondAttribute="trailing" constant="10" id="4H7-uT-hvi"/>
+                <constraint firstItem="QRU-BG-OoF" firstAttribute="top" secondItem="qSm-Bw-fo8" secondAttribute="bottom" constant="10" id="9YF-Xl-cy7"/>
+                <constraint firstItem="qSm-Bw-fo8" firstAttribute="leading" secondItem="bN9-N4-BZ9" secondAttribute="leading" constant="10" id="CfW-wm-YF5"/>
+                <constraint firstItem="vrK-QD-4bL" firstAttribute="centerX" secondItem="bN9-N4-BZ9" secondAttribute="centerX" id="IPr-ju-RRb"/>
+                <constraint firstItem="vrK-QD-4bL" firstAttribute="top" secondItem="QRU-BG-OoF" secondAttribute="bottom" constant="50" id="clJ-nl-rTe"/>
+                <constraint firstItem="qSm-Bw-fo8" firstAttribute="top" secondItem="bN9-N4-BZ9" secondAttribute="top" constant="10" id="jnL-JR-Mzr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="bN9-N4-BZ9"/>
+            <connections>
+                <outlet property="bgView" destination="QRU-BG-OoF" id="Dww-JR-ncl"/>
+                <outlet property="bgViewHeight" destination="bnG-sZ-4X2" id="jUP-U4-wGf"/>
+                <outlet property="buyBtn" destination="vrK-QD-4bL" id="mZP-4p-F76"/>
+            </connections>
+            <point key="canvasLocation" x="201" y="-190"/>
+        </view>
+    </objects>
+</document>

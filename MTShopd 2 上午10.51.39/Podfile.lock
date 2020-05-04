@@ -1,0 +1,83 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - AMap3DMap (7.2.0):
+    - AMapFoundation (~> 1.5)
+  - AMapFoundation (1.6.2)
+  - AMapLocation (2.6.4):
+    - AMapFoundation (~> 1.6.1)
+  - AMapSearch (7.1.0):
+    - AMapFoundation (~> 1.4)
+  - IQKeyboardManager (6.5.5)
+  - Masonry (1.1.0)
+  - MJRefresh (3.3.1)
+  - ReactiveObjC (3.0.0)
+  - SDCycleScrollView (1.80):
+    - SDWebImage (>= 5.0.0)
+  - SDWebImage (5.5.2):
+    - SDWebImage/Core (= 5.5.2)
+  - SDWebImage/Core (5.5.2)
+  - WeChat_SDK (1.8.1)
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - AFNetworking
+  - AMap3DMap
+  - AMapLocation
+  - AMapSearch
+  - IQKeyboardManager
+  - Masonry
+  - MJRefresh
+  - ReactiveObjC (~> 3.0.0)
+  - SDCycleScrollView
+  - SDWebImage
+  - WeChat_SDK
+  - YYModel
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - AMap3DMap
+    - AMapFoundation
+    - AMapLocation
+    - AMapSearch
+    - IQKeyboardManager
+    - Masonry
+    - MJRefresh
+    - ReactiveObjC
+    - SDCycleScrollView
+    - SDWebImage
+    - WeChat_SDK
+    - YYModel
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  AMap3DMap: be13191194c9aeb29a67d9d3e9a797588fb329aa
+  AMapFoundation: 672dc3a4759cb733f447c1e1b020f7ba2729f4ab
+  AMapLocation: b4162db67f813508a14ee7e05c7ee4073785221d
+  AMapSearch: 6bd6d361c5eb00110e0bffa4acf88b7bb9f7e059
+  IQKeyboardManager: 3a8b9e603f8b0eeaf5f096a1f2b2cfcf121992ef
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
+  ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
+  SDCycleScrollView: b3c9a5ed840c771c4938978174c7c9d9feefeb96
+  SDWebImage: 4d5c027c935438f341ed33dbac53ff9f479922ca
+  WeChat_SDK: 681388233ac24a3ed6c4803cb3e0b6d3602050aa
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: a0136ad43a446d235aca14cb7aab86d846598d79
+
+COCOAPODS: 1.9.0

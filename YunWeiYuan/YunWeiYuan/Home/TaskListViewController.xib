@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TaskListViewController">
+            <connections>
+                <outlet property="chooseView" destination="snI-fD-XJp" id="mem-yi-BZC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="buttons" destination="bje-AM-S30" id="vVq-SO-2lz"/>
+                <outletCollection property="buttons" destination="ELa-S7-2K7" id="73c-fu-jfo"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nf1-rf-nPR">
+                    <rect key="frame" x="0.0" y="44" width="414" height="40"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="snI-fD-XJp">
+                            <rect key="frame" x="20" y="5" width="374" height="30"/>
+                            <subviews>
+                                <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bje-AM-S30">
+                                    <rect key="frame" x="0.0" y="0.0" width="187" height="30"/>
+                                    <color key="backgroundColor" red="0.28637668490000001" green="0.51302373410000002" blue="0.3308899105" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <state key="normal" title="未处理"/>
+                                    <connections>
+                                        <action selector="chooseBtnClick:" destination="-1" eventType="touchUpInside" id="Reh-7g-gj8"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="200" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELa-S7-2K7">
+                                    <rect key="frame" x="187" y="0.0" width="187" height="30"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <state key="normal" title="已处理">
+                                        <color key="titleColor" red="0.28637668490000001" green="0.51302373410000002" blue="0.3308899105" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="chooseBtnClick:" destination="-1" eventType="touchUpInside" id="fbw-CP-Nmo"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="ELa-S7-2K7" secondAttribute="trailing" id="7bk-Ve-1Ek"/>
+                                <constraint firstAttribute="bottom" secondItem="ELa-S7-2K7" secondAttribute="bottom" id="GFv-gW-LLM"/>
+                                <constraint firstItem="bje-AM-S30" firstAttribute="top" secondItem="snI-fD-XJp" secondAttribute="top" id="Pxy-8B-2WP"/>
+                                <constraint firstAttribute="bottom" secondItem="bje-AM-S30" secondAttribute="bottom" id="Taj-2H-VdC"/>
+                                <constraint firstAttribute="height" constant="30" id="U8x-VS-pBx"/>
+                                <constraint firstItem="bje-AM-S30" firstAttribute="width" secondItem="snI-fD-XJp" secondAttribute="width" multiplier="0.5" id="Z2V-5u-GP6"/>
+                                <constraint firstItem="ELa-S7-2K7" firstAttribute="leading" secondItem="bje-AM-S30" secondAttribute="trailing" id="km0-Ph-guj"/>
+                                <constraint firstItem="bje-AM-S30" firstAttribute="leading" secondItem="snI-fD-XJp" secondAttribute="leading" id="moo-xg-vYg"/>
+                                <constraint firstItem="ELa-S7-2K7" firstAttribute="top" secondItem="snI-fD-XJp" secondAttribute="top" id="tuA-ud-wlG"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.cornerRadius" value="YES"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="layer.masksToBounds" value="5"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="snI-fD-XJp" firstAttribute="leading" secondItem="nf1-rf-nPR" secondAttribute="leading" constant="20" id="a9t-oR-xU5"/>
+                        <constraint firstAttribute="height" constant="40" id="jwf-TC-MGd"/>
+                        <constraint firstItem="snI-fD-XJp" firstAttribute="top" secondItem="nf1-rf-nPR" secondAttribute="top" constant="5" id="oIf-WZ-kbK"/>
+                        <constraint firstAttribute="trailing" secondItem="snI-fD-XJp" secondAttribute="trailing" constant="20" id="qh7-aX-K8M"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="nf1-rf-nPR" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="5a2-AZ-r5J"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="nf1-rf-nPR" secondAttribute="trailing" id="Df6-JS-yTz"/>
+                <constraint firstItem="nf1-rf-nPR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ib2-SM-P8c"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="139" y="100"/>
+        </view>
+    </objects>
+</document>

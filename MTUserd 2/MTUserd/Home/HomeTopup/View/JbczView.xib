@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="njj-mh-vZZ" customClass="JbczView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dKe-e6-w5I">
+                    <rect key="frame" x="10" y="41" width="394" height="200"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="2nc-Ru-a3i"/>
+                    </constraints>
+                </view>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Do-Jh-VbK">
+                    <rect key="frame" x="132" y="291" width="150" height="40"/>
+                    <color key="backgroundColor" red="0.12777772549999999" green="0.52631616589999997" blue="0.85020643470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="W5H-mg-ox2"/>
+                        <constraint firstAttribute="width" constant="150" id="jxp-j5-nkD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="购买"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="20"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="buyBtnClick:" destination="njj-mh-vZZ" eventType="touchUpInside" id="Q9k-aa-0Yf"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择充值金额" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ZR-Iy-9QZ">
+                    <rect key="frame" x="10" y="10" width="121.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.44688993690000001" green="0.45095264909999999" blue="0.45505040879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="o3O-Vd-TKf" firstAttribute="trailing" secondItem="dKe-e6-w5I" secondAttribute="trailing" constant="10" id="AUH-uc-M2m"/>
+                <constraint firstItem="0ZR-Iy-9QZ" firstAttribute="leading" secondItem="o3O-Vd-TKf" secondAttribute="leading" constant="10" id="W3s-yD-Qye"/>
+                <constraint firstItem="2Do-Jh-VbK" firstAttribute="centerX" secondItem="o3O-Vd-TKf" secondAttribute="centerX" id="b3U-4x-yx2"/>
+                <constraint firstItem="dKe-e6-w5I" firstAttribute="leading" secondItem="o3O-Vd-TKf" secondAttribute="leading" constant="10" id="gEn-ok-Ce0"/>
+                <constraint firstItem="2Do-Jh-VbK" firstAttribute="top" secondItem="dKe-e6-w5I" secondAttribute="bottom" constant="50" id="hBa-Pl-Cqr"/>
+                <constraint firstItem="0ZR-Iy-9QZ" firstAttribute="top" secondItem="njj-mh-vZZ" secondAttribute="top" constant="10" id="rDL-CY-LMf"/>
+                <constraint firstItem="dKe-e6-w5I" firstAttribute="top" secondItem="0ZR-Iy-9QZ" secondAttribute="bottom" constant="10" id="zpH-z5-hK5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="o3O-Vd-TKf"/>
+            <connections>
+                <outlet property="bgView" destination="dKe-e6-w5I" id="hLT-OJ-kFM"/>
+                <outlet property="bgViewHeight" destination="2nc-Ru-a3i" id="1m8-Ai-2Bn"/>
+                <outlet property="buyBtn" destination="2Do-Jh-VbK" id="iCI-3Y-9Nq"/>
+            </connections>
+            <point key="canvasLocation" x="144.92753623188406" y="-176.11607142857142"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,60 @@
+//
+//  PrefixHeader.pch
+//  YunWeiShang
+//
+//  Created by 伯爵 on 2020/2/28.
+//  Copyright © 2020 GangMeiTanGongXu. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import "MBProgressHUD.h"
+#import <Masonry.h>
+#import <MJRefresh/MJRefresh.h>
+#define ScreenWidth ([UIScreen mainScreen].bounds.size.width)
+#define ScreenHeight ([UIScreen mainScreen].bounds.size.height)
+
+#define Token [[NSUserDefaults standardUserDefaults] objectForKey:@"user_token"]
+
+#define MBPShowToView(view)  [MBProgressHUD showHUDAddedTo:view animated:YES];
+
+#define MBPHiddenFormView(view)  [MBProgressHUD hideHUDForView:view animated:YES];
+
+
+//颜色rgb
+#define RGB(R,G,B)        [UIColor colorWithRed:R/255.0f green:G/255.0f blue:B/255.0f alpha:1.0f]
+#define mainColor        [UIColor colorWithRed:75/255.0f green:130/255.0f blue:86/255.0f alpha:1.0f]
+
+#define base_url @"https://xlhdtsm.zhixingonline.com/"
+
+
+//控制器
+#import "AppDelegate.h"
+#import "BaseNavigationController.h"
+#import "LoginViewController.h"
+#import "MCTabBarController.h"
+
+//第三方
+#import "DataRequest.h"
+#import "UIView+Convenience.h"
+#import "UIView+NIB.h"
+#import "UIView+Addtion.h"
+#import "JKLimitInput.h"
+#import "UITextView+JKExtension.h"
+#import "UIViewController+HUD.h"
+#import <YYModel/YYModel.h>
+#import "UIImageView+WebCache.h"
+#import "UIButton+WebCache.h"
+
+#import <MAMapKit/MAMapKit.h>
+#import <AMapFoundationKit/AMapFoundationKit.h>
+#import <AMapSearchKit/AMapSearchKit.h>
+#import <AMapLocationKit/AMapLocationManager.h>
+
+#import "Singleton.h"
+
+//model
+#import "HomeListModel.h"
+
+
+#endif /* PrefixHeader_pch */

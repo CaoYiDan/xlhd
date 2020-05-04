@@ -1,0 +1,23 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'MTShopd' do
+  pod 'AFNetworking'
+    pod 'SDWebImage'
+    pod 'MJRefresh'
+#    pod 'MBProgressHUD'
+    pod 'SDCycleScrollView'
+    pod 'Masonry'
+    pod 'YYModel'
+    pod 'AMapLocation'
+    pod 'AMapSearch'
+    pod 'ReactiveObjC','~> 3.0.0'
+    pod 'AMap3DMap'
+    pod 'YYModel'
+#    pod 'AliPay'
+#    pod 'AlipaySDK-iOS'
+    pod 'WeChat_SDK'
+    pod 'IQKeyboardManager'
+
+
+end
